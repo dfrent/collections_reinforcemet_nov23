@@ -118,3 +118,10 @@ def display_view(h)
     puts article[:views]
   end
 end
+
+read_article(hash)
+read_article(hash)
+read_article(hash)
+read_article(hash)
+
+display_view(hash)
