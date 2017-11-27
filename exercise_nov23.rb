@@ -101,3 +101,20 @@ isHosted: false
 }
 ]}
 }
+
+
+hash[:response][:results].map do |article|
+  article[:views] = 0
+end
+
+#----- print hash -----#
+
+def read_article(h)
+  h[:response][:results][rand(h[:response][:results].count)][:views] += 1
+end
+
+def display_view(h)
+  h[:response][:results].each do |article|
+    puts article[:views]
+  end
+end
